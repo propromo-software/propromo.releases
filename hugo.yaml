@@ -25,17 +25,9 @@ params:
     default: true
     placeholder: "Search posts..."
     
-  profileMode:
-    enabled: true
-    title: "Propromo Releases"
-    subtitle: "Project Progress Monitoring - Release Notes and Updates"
-    buttons:
-      - name: Posts
-        url: /posts
-      - name: Tags
-        url: /tags
-      - name: GitHub
-        url: "https://github.com/propromo-software"
+  homeInfoParams:
+    Title: "Propromo Releases"
+    Content: "Project Progress Monitoring - Release Notes and Updates"
 
   socialIcons:
     - name: github
