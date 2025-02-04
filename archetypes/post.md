@@ -13,7 +13,6 @@ comments: false
 description: "Project Progress Monitoring. Share your project progress with clients."
 disableHLJS: true
 disableShare: false
-disableHLJS: false
 hideSummary: false
 searchHidden: true
 ShowReadingTime: true

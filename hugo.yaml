@@ -8,3 +8,60 @@ module:
       disable: false
 
 theme: ["github.com/adityatelange/hugo-PaperMod"]
+
+params:
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  
+  env: production
+  search:
+    enable: true
+    default: true
+    placeholder: "Search posts..."
+    
+  profileMode:
+    enabled: true
+    title: "Propromo Releases"
+    subtitle: "Project Progress Monitoring - Release Notes and Updates"
+    buttons:
+      - name: Posts
+        url: /posts
+      - name: Tags
+        url: /tags
+      - name: GitHub
+        url: "https://github.com/propromo-software"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/propromo-software"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: github
+      name: GitHub
+      url: https://github.com/propromo-software
+      weight: 40
