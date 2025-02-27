@@ -2,12 +2,14 @@ baseURL: https://propromo-software.github.io/propromo.releases/
 languageCode: en-us
 title: propromo.releases
 
-module:
-  imports:
-    - path: github.com/adityatelange/hugo-PaperMod
-      disable: false
+# module:
+#   imports:
+#     - path: github.com/adityatelange/hugo-PaperMod
+#       disable: false
 
-theme: ["github.com/adityatelange/hugo-PaperMod"]
+# theme: ["github.com/adityatelange/hugo-PaperMod"]
+
+theme: "PaperMod"
 
 params:
   defaultTheme: auto
@@ -18,13 +20,13 @@ params:
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
   ShowToc: true
-  
+
   env: production
   search:
     enable: true
     default: true
     placeholder: "Search posts..."
-    
+
   homeInfoParams:
     Title: "Propromo Releases"
     Content: "Project Progress Monitoring - Release Notes and Updates"
