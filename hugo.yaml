@@ -35,6 +35,11 @@ params:
     - name: github
       url: "https://github.com/propromo-software"
 
+#  assets:
+#    favicon: "/assets/favicon.ico"
+#    favicon16x16: "/assets/favicon-16x16.png"
+#    favicon32x32: "/assets/favicon-32x32.png"
+
 outputs:
   home:
     - HTML
