@@ -4,10 +4,15 @@ on:
   push:
     branches:
       - main
+  workflow_run:
+    workflows: ["Check Propromo Releases"]
+    types:
+      - completed
 
 jobs:
   deploy:
     runs-on: ubuntu-22.04
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
